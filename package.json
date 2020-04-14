@@ -1,0 +1,29 @@
+{
+  "name": "web-start-pack",
+  "version": "1.0.0",
+  "description": "Easy starter pack for web-dev",
+  "main": "index.js",
+  "scripts": {
+    "debug": "npm-run-all -p nodemon browser-sync",
+    "nodemon": "nodemon",
+    "browser-sync": "browser-sync start --config bs-config.js",
+    "start": "pm2 start index.js --name web-start-pack --watch --max-memory-restart 100M",
+    "stop": "pm2 stop web-start-pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lgg/web-start-pack.git"
+  },
+  "author": "lgg",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pm2": "^4.1.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "nodemon": "^1.19.4",
+    "npm-run-all": "^4.1.5"
+  }
+}

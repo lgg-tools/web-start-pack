@@ -1,0 +1,10 @@
+{
+  "watch": [
+    "index.js",
+    "index.html",
+    "public/",
+    "static/",
+    "dist/"
+  ],
+  "ext": "html, js, css"
+}
